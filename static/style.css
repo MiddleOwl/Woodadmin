@@ -1,0 +1,290 @@
+@font-face{
+	font-family:'FFF_Tusj';
+	src:url('FFF_Tusj.ttf');
+	
+}
+body{
+	
+    display:flex;
+	flex-direction:column;	
+	align-items:center;
+	background-color:rgba(50,20,0,0.3);
+	background-color:rgba(191,176,149,0.8);	
+	padding-top:5px; 
+	background-image:url('fond2.jpg');
+	background-position:left;
+	background-attachment:fixed;
+	
+	
+}
+
+
+header{
+	border-radius:15px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:93%;	
+	
+}
+input,select{
+	border:1px solid rgba(150,150,150,0.5);
+	border-radius:4px;
+	height:20px;
+}
+input[type=button],input[type=submit]{
+	border:1px solid white;
+	border-radius: 4px;	
+	margin-right:4px;
+	margin-top:5px;
+	background-color:grey;		
+}
+
+input[type=number]{
+	width:65px;
+}
+textarea{
+	height:80px;
+	width:450px;
+	border:1px solid rgba(150,150,150,0.5);
+	border-radius:4px;
+}
+h1{
+	font-family:Trebuchet MS;
+	font-size:1.3em;
+	text-decoration: bold;
+		
+}
+h2{
+	font-family:Trebuchet MS;
+	font-size:0.9em;
+	text-decoration:underline;
+	
+}
+table{
+	border-collapse:collapse;
+	width:100%;
+
+}
+th{
+	text-align: left;
+	background-color:rgba(192,192,192,0.7);	
+}
+
+tr{
+	padding-left:7px;		
+	height:30px;	
+}
+
+
+td{
+	
+	padding-left:7px;
+	height:25px;
+}
+
+nav{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	font-family:Arial;
+	font-size:0.9em;	
+	border:1px solid white;
+	border-radius:65px;	
+	background-color:rgba(128,60,51,0.6);
+	padding: 5px;
+	width: 700px;
+	height: 45px;
+	margin-bottom: 20px;
+}
+
+ul{
+	display:flex;
+	justify-content:space-between;
+	list-style-type:none;
+	padding: 0px;
+}
+
+li{
+	border:1px solid white;
+	border-radius:15px;
+	background-color:rgba(255,255,255,0.4);	
+	height: 35px;
+	width: 130px;
+	text-align: center;
+	margin:3px
+}
+
+li a{
+  line-height: 35px;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}
+
+
+
+#raisondetre{
+	font-size:2em;
+	font-family:FFF_Tusj;
+	color:brown;
+	transition-property:transform;
+	transition-duration:3s;
+	transition-delay:0.4s;
+
+}
+#raisondetre:hover{
+	transform:translateY(150px);
+}
+
+
+#bordsarrondis{
+	border:1px solid gray;
+	border-radius:7px;
+	
+}
+
+#content{
+	
+	display:flex;
+	flex-direction:column;	
+	align-items:center;
+	width:95%;
+	margin-top:50px;
+	background-color:rgba(255,255,253,0.9);
+	border:1px solid rgba(255,255,255,0.5);
+	border-radius:10px;
+}
+
+#logo{
+	margin-bottom: 10px;
+	border:1px solid rgb(131,191,50);
+	border-radius:15px;
+}
+
+#nomWoodien{
+	font-size:1.1em;
+	
+}
+
+
+#form{
+    align-items: center;
+    border: 3px solid green;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    justify-content: flex-start;
+	margin-top:10%;
+    padding: 20px;
+}
+
+#boutonconnexion{
+	margin:auto;
+}
+
+
+
+#flexStart{
+	
+	align-self:flex-start;	
+	margin-top:5px;	
+	padding:10px;
+	width:95%;
+
+}
+
+#status,#sexe{
+	display:flex;
+}
+
+#identity{
+	font-weight:bold;
+	font-style:italic;	
+}
+
+#trombi{
+	border:1px solid white;
+	border-radius:100px;
+	width:250px;
+	height:166px;
+
+}
+#etatcivil{
+	display:flex;
+	flex-direction:column;	
+}
+
+#blocSection{
+	display:flex;
+	justify-content:space-between;
+	padding:15px;
+		
+}
+
+#blocSectionContrat{
+	display:flex;
+	
+}
+
+#detailsContrat{	
+	display:flex;
+	flex-direction:column;	
+}
+#finContrat{
+	display:flex;
+}
+#motifFinCtr{
+	margin-left:10px;
+}
+#zoneComment{
+	display:flex;	
+}
+#saveWoodien,#updateWoodien,#saveEnfant,#saveContrat,#presenceAPreciser{
+	display:none;
+}
+
+
+#dureePeriodeEssai,#calculFinPE,#calculFinCDD{
+	width:35px;
+}
+
+#vigilance{
+	border:5px solid rgba(140,198,62,1);
+	border-radius:7px;
+	background-color:rgba(255,255,255,0.6);
+	padding:5px;
+	width:30%;
+	
+}
+#ratiopresence{
+	width:35px;
+}
+
+.details{
+	border-top:2px solid rgba(128,60,51,0.9);
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-radius:10px;
+	padding:8px;
+	margin-bottom:15px;
+}
+
+
+.boutons{
+	display:flex;
+	justify-content:center;	
+	margin-bottom:15px;
+	
+}
+.titreParag{
+	font-weight:bold;
+}
+
+

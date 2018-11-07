@@ -104,7 +104,7 @@ $(document).ready(function(){
 	}
 	
 	$('#saveWoodien').click(function(){
-		alert($('input[name=handicap]:radio:checked').val());		
+			
 		if(/([0-9]{2}-){4}[0-9]{2}/.test($('#tel').val())){
 			$.post(
 				'index.php?page=woodien&action=insert',

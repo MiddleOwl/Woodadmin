@@ -77,7 +77,7 @@
 									echo('<p id="motifFinCtr" class="titreParag"> Motif de fin de contrat:							
 											<select id="listeMotifsFinCtr" class="modif">
 												<option value="fin CDD"');?><?php if($contrat['motifFinContrat']=="fin CDD")echo('selected="selected"');?><?php echo('>fin CDD</option>
-												<option value="rutpure conventionnelle"');?><?php if($contrat['motifFinContrat']=="rupture conventionnelle")echo('selected="selected"');?><?php echo('>rupture conventionnelle</option>
+												<option value="rupture conventionnelle"');?><?php if($contrat['motifFinContrat']=="rupture conventionnelle")echo('selected="selected"');?><?php echo('>rupture conventionnelle</option>
 												<option value="demission"');?><?php if($contrat['motifFinContrat']=="demission")echo('selected="selected"');?><?php echo('>démission</option>
 												<option value="licenciement"');?><?php if($contrat['motifFinContrat']=="licenciement")echo('selected="selected"');?><?php echo('>licenciement</option>
 												<option value="retraite"');?><?php if($contrat['motifFinContrat']=="retraite")echo('selected="selected"');?><?php echo('>départ retraite</option>

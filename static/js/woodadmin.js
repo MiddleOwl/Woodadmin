@@ -104,8 +104,9 @@ $(document).ready(function(){
 	}
 	
 	$('#saveWoodien').click(function(){
-			
-		if(/([0-9]{2}-){4}[0-9]{2}/.test($('#tel').val())){
+		$tel=$('#tel').val();
+		
+		if(/([0-9]{2}-){4}[0-9]{2}/.test($tel)||$tel==""){
 			$.post(
 				'index.php?page=woodien&action=insert',
 				{
@@ -140,30 +141,36 @@ $(document).ready(function(){
 		
 		var url=new URL(location);
 		var idWoodienAMaj= url.searchParams.get('id');
-		$.post(
-			'index.php?page=woodien&action=update',
-			{
-				id:idWoodienAMaj,
-				sexe:$('input[name=sexe]:radio:checked').val(),
-				name:$('#name').val(),
-				firstname:$('#firstName').val(),
-				dateOfBirth:$('#dateOfBirth').val(),
-				lieuDeNaissance:$('#lieuDeNaissance').val(),
-				situation:$('#situation').val(),
-				adresse:$('#adresse').val(),
-				codePostal:$('#codepostal').val(),
-				ville:$('#ville').val(),
-				tel:$('#tel').val(),
-				portable:$('#portable').val(),
-				travailleurHandicape:$('input[name=handicap]:radio:checked').val()
-				
-			},
-			function(data){
-				alert(data);
-				location = 'index.php?page=woodiens';
-			},
-			"text"
-		)
+		$tel=$('#tel').val();
+		if(/([0-9]{2}-){4}[0-9]{2}/.test($tel)||$tel==""){
+			$.post(
+				'index.php?page=woodien&action=update',
+				{
+					id:idWoodienAMaj,
+					sexe:$('input[name=sexe]:radio:checked').val(),
+					name:$('#name').val(),
+					firstname:$('#firstName').val(),
+					dateOfBirth:$('#dateOfBirth').val(),
+					lieuDeNaissance:$('#lieuDeNaissance').val(),
+					situation:$('#situation').val(),
+					adresse:$('#adresse').val(),
+					codePostal:$('#codepostal').val(),
+					ville:$('#ville').val(),
+					tel:$('#tel').val(),
+					portable:$('#portable').val(),
+					travailleurHandicape:$('input[name=handicap]:radio:checked').val()
+					
+				},
+				function(data){
+					alert(data);
+					location = 'index.php?page=woodiens';
+				},
+				"text"
+			)
+		}
+		else{
+			alert('Merci de saisir un numéro de tel au format 01-02-03-04-05');
+		}
 	});
 	
 	$('#deleteWoodien').click(function(){

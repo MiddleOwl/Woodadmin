@@ -1,4 +1,4 @@
-var url=new URL(location);
+--var url=new URL(location);
 $(document).ready(function(){
 	$('#bouton_connexion').click(function(){
        	$.post(

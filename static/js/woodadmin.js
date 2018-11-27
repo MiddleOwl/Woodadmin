@@ -1,5 +1,27 @@
 var url=new URL(location);
 $(document).ready(function(){
+	
+	setInterval(function(){
+		$.get(
+			'index.php?page=get_contrats_emergency',
+			false,
+			callback,
+			'text'			
+		 );
+		function callback(back){
+			
+			$('#contratsATraiter').html(back);
+			$('#contratsATraiter').css('display','block');
+			
+		}
+	},20000);
+	
+	if(parseInt($('#calculFinPE').val())<30 || parseInt($('#calculFinCDD').val())<30){
+		$('#vigilance').css({border:'5px solid red'});
+				
+	}	
+	
+	
 	$('#bouton_connexion').click(function(){
        	$.post(
             'index.php?page=login',
@@ -31,10 +53,6 @@ $(document).ready(function(){
 		position:{my:'top',at:'right'}
 	});
 	
-	if(parseInt($('#calculFinPE').val())<30 || parseInt($('#calculFinCDD').val())<30){
-		$('#vigilance').css({border:'5px solid red'});
-		
-	};
 	
 	
 	$('#presence').change(function(){

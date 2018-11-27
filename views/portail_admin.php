@@ -9,14 +9,16 @@
         echo("<div id='welcome'>Bienvenue sur le portail admin !</div>");
 	?>
 	<div id="tableauDeBord">
-		<div id="contratsATraiter">
+		
 		
 		<p> Vous avez une action requise pour les contrats suivants: </p>
+		<div id="contratsATraiter">
 			<table>
 				<thead>
 					<th>Numéro du contrat à traiter</th>
 					<th>Woodien titulaire</th>
-					<th>Nature de l'alerte</th>
+					<th>Date de fin période d'essai</th>
+					<th>Date de fin de contrat</th>
 				</thead>
 				<tbody>
 				 <?php

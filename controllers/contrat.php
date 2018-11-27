@@ -3,11 +3,10 @@
 	include(dirname(__FILE__)."/../models/contrats.php");
 	
 	$contrat=(isset($_GET['id']))?recup_contrat($_GET['id']):NULL;
-	
+		
 	$today = strtotime(date("Y-m-d"));
 	
-	
-	
+		
 	if($contrat['typeContrat']==1){
 	
 		$dateFinCDD=strtotime($contrat['dateFin']);
@@ -27,7 +26,7 @@
 		$delaiFinPE=NULL;
 	}
 	
-
+	
 	// $contrat['actionRequise'] = (($delaiFinCDD < 30 AND $delaiFinCDD!=NULL) OR ($delaiFinPE < 30)) ? 1:0;
 	// echo ($delaiFinCDD.'  '.$contrat['actionRequise']);
 
@@ -35,8 +34,7 @@
 		// update_actionRequise_from_contrat($_GET['id']); 
 	// }
 	
-	
-		
+			
 	
 	switch($_GET['action']){
 		case 'read':

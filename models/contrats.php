@@ -1,4 +1,6 @@
 <?php
+	
+	
 
 	function recup_contrats(){
 		include(dirname(__FILE__)."/../hidden/connexion.php");
@@ -32,21 +34,27 @@
 		
 	}
 	
-	function update_actionRequise_from_contrat($id){
+	function get_contrats_emergency(){
 		include(dirname(__FILE__)."/../hidden/connexion.php");
-		$query=$bdd->exec('UPDATE contrats SET actionRequise="1" WHERE id='.$id);		
+		
+		$dateDuJour = date_create(date('Y-m-d'));
+		$dateLimite = clone $dateDuJour;// on clone dateDuJour pour éviter la modification dans la méthode suivante
+		$dateLimite = date_add($dateLimite,date_interval_create_from_date_string('30 days'));//ajout de 30 jours à dateLimite
+				
+		$dateLimite=$dateLimite->format('Y-m-d');
+		$contratsEmergency=array();
+		$query=$bdd->query('SELECT * FROM contrats WHERE finPeriodeEssai<"'.$dateLimite.'"AND finPeriodeEssai>"'.$dateDuJour->format('Y-m-d').'"');
+		while($data=$query->fetch()){
+			
+			$contratsEmergency[]=$data;
+		}	
+		
+		$query->closeCursor();
+		
+		
+		return($contratsEmergency);		
 	}
 	
-	function get_Contrats_A_Traiter(){
-		include(dirname(__FILE__)."/../hidden/connexion.php");
-		$contratsATraiter=array();
-		$query=$bdd->query('SELECT numContrat,idWoodien,delaiAvantFinPeriodeEssai FROM contrats WHERE actionRequise=1');
-		while($data=$query->fetch()){
-			$contratsATraiter[]=$data;
-		}
-		$query->closeCursor();
-		return($contratsATraiter);
-	}
 	
 	function get_woodien_from_contrat($idWoodien){
 		include(dirname(__FILE__)."/../hidden/connexion.php");

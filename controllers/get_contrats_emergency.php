@@ -10,11 +10,11 @@
 				</thead>
 				<tbody><tr>";
 	foreach ($contratsEmergency as $cE){
-		
+		$idW=$cE[2];
 		$back.="<td>";
 		$back.=$cE['numContrat'];
 		$back.="</td><td>";
-		$back.=$cE['idWoodien'];
+		$back.=get_woodien_from_contrat($idW)[1];
 		$back.="</td><td>";
 		$back.=$cE['finPeriodeEssai'];
 		$back.="</td><td>";

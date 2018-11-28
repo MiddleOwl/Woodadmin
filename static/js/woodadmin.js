@@ -10,8 +10,7 @@ $(document).ready(function(){
 		 );
 		function callback(back){
 			
-			$('#contratsATraiter').html(back);
-			$('#contratsATraiter').css('display','block');
+			$('#contratsATraiter').html(back);			
 			
 		}
 	},20000);

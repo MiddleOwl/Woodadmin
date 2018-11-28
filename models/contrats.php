@@ -38,12 +38,12 @@
 		include(dirname(__FILE__)."/../hidden/connexion.php");
 		
 		$dateDuJour = date_create(date('Y-m-d'));
-		$dateLimite = clone $dateDuJour;// on clone dateDuJour pour éviter la modification dans la méthode suivante
-		$dateLimite = date_add($dateLimite,date_interval_create_from_date_string('30 days'));//ajout de 30 jours à dateLimite
-				
-		$dateLimite=$dateLimite->format('Y-m-d');
+		$dateLimite	= clone $dateDuJour;// on clone dateDuJour pour éviter la modification dans la méthode suivante
+		$dateLimite	= date_add($dateLimite,date_interval_create_from_date_string('30 days'));//ajout de 30 jours à dateLimite
+		$dateLimite = $dateLimite->format('Y-m-d');
+		
 		$contratsEmergency=array();
-		$query=$bdd->query('SELECT * FROM contrats WHERE finPeriodeEssai<"'.$dateLimite.'"AND finPeriodeEssai>"'.$dateDuJour->format('Y-m-d').'"');
+		$query=$bdd->query('SELECT * FROM contrats WHERE (finPeriodeEssai<"'.$dateLimite.'"AND finPeriodeEssai!= "00/00/0000") OR (dateFin<"'.$dateLimite.'" AND dateFin!="00/00/0000")');
 		while($data=$query->fetch()){
 			
 			$contratsEmergency[]=$data;

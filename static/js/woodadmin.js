@@ -1,7 +1,8 @@
 var url=new URL(location);
 $(document).ready(function(){
 	
-	setInterval(function(){
+	function check_contrats_emergency(){
+		
 		$.get(
 			'index.php?page=get_contrats_emergency',
 			false,
@@ -13,7 +14,10 @@ $(document).ready(function(){
 			$('#contratsATraiter').html(back);			
 			
 		}
-	},20000);
+	}
+	
+	check_contrats_emergency();
+	setInterval(check_contrats_emergency(),3600000);
 	
 	if(parseInt($('#calculFinPE').val())<30 || parseInt($('#calculFinCDD').val())<30){
 		$('#vigilance').css({border:'5px solid red'});

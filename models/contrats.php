@@ -43,7 +43,7 @@
 		$dateLimite = $dateLimite->format('Y-m-d');
 		
 		$contratsEmergency=array();
-		$query=$bdd->query('SELECT * FROM contrats WHERE (finPeriodeEssai<"'.$dateLimite.'"AND finPeriodeEssai!= "00/00/0000") OR (dateFin<"'.$dateLimite.'" AND dateFin!="00/00/0000")');
+		$query=$bdd->query('SELECT * FROM contrats WHERE (finPeriodeEssai<"'.$dateLimite.'"AND finPeriodeEssai!= "00/00/0000") OR (dateFin<"'.$dateLimite.'" AND dateFin!="00/00/0000")');//on récupère les contrats où fin PE ou fin contrat est inférieure à 30 jrs
 		while($data=$query->fetch()){
 			
 			$contratsEmergency[]=$data;

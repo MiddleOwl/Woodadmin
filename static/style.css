@@ -64,6 +64,8 @@ h2{
 table{
 	border-collapse:collapse;
 	width:100%;
+	
+	
 
 }
 th{
@@ -144,7 +146,7 @@ a{
 
 #bordsarrondis{
 	border:1px solid gray;
-	border-radius:7px;
+	border-radius:4px;
 	
 }
 
@@ -166,10 +168,7 @@ a{
 	border-radius:15px;
 }
 
-#nomWoodien{
-	font-size:1.1em;
-	
-}
+
 
 
 #form{
@@ -192,7 +191,7 @@ a{
 
 #flexStart{
 	
-	align-self:flex-start;	
+	align-self:center;	
 	margin-top:5px;	
 	padding:10px;
 	width:95%;
@@ -203,9 +202,29 @@ a{
 	display:flex;
 }
 
-#identity{
+#exergue{	
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: center;
 	font-weight:bold;
-	font-style:italic;	
+	font-style:italic;
+	font-size:1.1em	
+}
+
+#back{
+	
+	border:1px solid brown;
+	border-radius:5px;
+	padding:2px;
+	font-size:0.7em;
+	font-style:normal;
+	font-weight:normal;
+}
+#back:hover{
+	font-style:italic;
+	color:green;
+	
 }
 
 #trombi{
@@ -266,17 +285,9 @@ a{
 	width:35px;
 }
 
-#contratsATraiter{
-    border: 2px solid rgba(128,60,51,0.9);
-    border-radius: 4px;
-    width: 75%;
-}
 
-#contratsATraiter td, th{
-    border: 1px solid grey;
-    border-width: 1px;
-    padding: 10px;
-}
+
+
 
 .details{
 	border-top:2px solid rgba(128,60,51,0.9);

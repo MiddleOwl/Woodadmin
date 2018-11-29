@@ -3,16 +3,31 @@
 <?php include(dirname(__FILE__)."/../includes/nav.php");?>
 <?php $nav=ob_get_clean();?>
 <?php ob_start();?>
+
 	<section id="flexStart">
-		<p class="titreParag">Contrat</p>
-		<p class="titreParag">
-			<?php
-				
-				$designationContrat=($_GET['action']=='read')?($contrat['numContrat']):"Nouveau contrat";
-				echo($designationContrat);
+		<div id="exergue">
+		
+			<p class="titreParag">
+				<?php
+					
+					$designationContrat=($_GET['action']=='read')?($contrat['numContrat']):"Nouveau contrat";
+					echo($designationContrat);
+					
+				?>
+			</p>
+			<?php 
+			
+				if($_GET['action']=='read'){
+					echo("<a id='back' href='index.php?page=woodien&action=read&id=".$_GET['idWoodien']."'>Aller à la page du Woodien</a>");
+				}
+				else{
+					echo("");
+				}
 				
 			?>
-		</p>
+			
+		</div>
+		
 		<?php
 		
 			$encartVigilance=($_GET['action']=='read')?('<div id="vigilance">
@@ -31,7 +46,8 @@
 			echo($encartVigilance);
 			
 			
-		?>		
+		?>
+		
 						
 		
 		<div class="boutons">

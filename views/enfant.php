@@ -5,6 +5,17 @@
 <?php ob_start(); ?>
 
 	<section id="flexStart">
+		
+		<div id="exergue">
+			<p><?php echo($enfant['prenom'].' '.$enfant['nom'])?></p> 	
+			<?php if ($_GET['action']=='read'){
+				echo("<a id='back' href='index.php?page=woodien&action=read&id=".$_GET['idWoodien']."'>Aller à la page du Woodien</a>");
+			}
+			else{
+				echo("");
+			}
+			?>
+		</div>
 	
 		<div class="boutons">
 			<input id="deleteEnfant" type="button" name="delete" value="Supprimer"></input>

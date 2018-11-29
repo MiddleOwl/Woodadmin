@@ -11,7 +11,9 @@
 	<div id="flexStart">	
 		
 		<p id="actionRequise"> Vous avez une action requise pour les contrats suivants: </p>
-		<div id="contratsATraiter"></div>
+		<div id="bordsarrondis">
+			<div id="contratsATraiter"></div>
+		</div>
 		
 	</div>
 	

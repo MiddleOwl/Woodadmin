@@ -6,9 +6,11 @@
 
 <?php ob_start(); ?>
     <section id="flexStart">
-        <div id="identity">
+		
+        <div id="exergue">
                         
             <?php echo "<p id='nomWoodien'>".$woodien['prenom']." ".$woodien['nom']."</p>";?>
+			<a id="back" href="index.php?page=Woodiens"> Revenir à la liste des Woodiens</a>
 			
         </div>
 		

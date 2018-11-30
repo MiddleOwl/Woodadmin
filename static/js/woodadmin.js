@@ -94,14 +94,14 @@ $(document).ready(function(){
 		})
 	});
 	
-	$('tbody tr').mouseover(function(){
+	$('tr').mouseover(function(){
 		$(this).css({
 			backgroundColor:'rgba(255,255,255,0.7)',
 			
 		});
 	});
 	
-	$('tbody tr').mouseleave(function(){
+	$('tr').mouseleave(function(){
 		$(this).css({
 			background:'none',
 			

@@ -8,7 +8,7 @@
 					<th>Date de fin période d'essai</th>
 					<th>Date de fin de contrat</th>
 				</thead>
-				<tbody><tr>";
+				<tbody>";
 				
 	function conversionDate($dateAConvertir){
 		
@@ -20,7 +20,7 @@
 
 	foreach ($contratsEmergency as $cE){
 		$idW=$cE[2];
-		$back.="<td>";
+		$back.="<tr><td>";
 		$back.="<a href='index.php?page=contrat&action=read&id=".$cE['id']."&idWoodien=".$cE['idWoodien']."'>".$cE['numContrat']."</a>";
 		$back.="</td><td>";
 		$back.=get_woodien_from_contrat($idW)[1];

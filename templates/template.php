@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
         <title><?php print $title ?></title>
-		<link rel="stylesheet" href="static/style.css"/>
+		<link rel="stylesheet" href="static/css/style.css"/>
 		<link rel="stylesheet" href="static/jquery-ui.css"/>
 	</head>
 	

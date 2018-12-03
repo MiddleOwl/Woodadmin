@@ -40,48 +40,7 @@
 						
 				</tbody>
 			</table>
-		</div>
-		
-		<div id='accordion'>
-			<h4>titre 1</h4>
-			<div>
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-				Lorem ipsum et tout le bazar
-			</div>
-			<h4>titre2</h4>
-			<div>
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-				du texte du texte du texte
-			</div>
-			<h4>titre3</h4>
-			<div>
-				Mauris mauris ante, blandit et,
-				ultrices a, suscipit eget, quam. 
-				Integer ut neque. Vivamus nisi metus,
-				molestie vel, gravida in, condimentum 
-				sit amet, nunc. Nam a nibh. Donec suscipit eros.
-				Nam mi. Proin viverra leo ut odio. Curabitur malesuada. 
-				Vestibulum a velit eu ante scelerisque vulputate. 
-			</div>
-		</div>
-			
-			
+		</div>			
 	
     </section>
 	

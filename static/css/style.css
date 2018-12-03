@@ -13,8 +13,7 @@ body{
 	padding-top:5px; 
 	background-image:url('../fond2.jpg');
 	background-position:left;
-	background-attachment:fixed;
-	
+	background-attachment:fixed;	
 	
 }
 
@@ -24,13 +23,14 @@ header{
 	flex-direction:column;
 	align-items:center;
 	width:93%;	
-	
 }
+
 input,select{
 	border:1px solid rgba(150,150,150,0.5);
 	border-radius:4px;
 	height:20px;
 }
+
 input[type=button],input[type=submit]{
 	border:1px solid white;
 	border-radius: 4px;	
@@ -49,25 +49,25 @@ textarea{
 	border:1px solid rgba(150,150,150,0.5);
 	border-radius:4px;
 }
+
 h1{
 	font-family:Trebuchet MS;
 	font-size:1.3em;
-	text-decoration: bold;
-		
+	text-decoration: bold;		
 }
+
 h2{
 	font-family:Trebuchet MS;
-	font-size:0.9em;
-	text-decoration:underline;
-	
+	font-size:0.9em;	
 }
+
+	
+
 table{
 	border-collapse:collapse;
 	width:100%;
-	
-	
-
 }
+
 th{
 	text-align: left;
 	background-color:rgba(192,192,192,0.7);	
@@ -75,7 +75,7 @@ th{
 
 tr{
 	padding-left:7px;		
-	height:30px;	
+	height:30px;
 }
 
 
@@ -131,15 +131,17 @@ a{
 
 
 #raisondetre{
+	
 	font-size:2em;
 	font-family:FFF_Tusj;
 	color:brown;
 	transition-property:transform;
 	transition-duration:3s;
 	transition-delay:0.4s;
-
 }
+
 #raisondetre:hover{
+	
 	transform:translateY(150px);
 }
 
@@ -151,6 +153,7 @@ a{
 }
 
 #content{
+	border: 15px solid red;
 	display:flex;
 	flex-direction:column;	
 	align-items:center;
@@ -167,7 +170,6 @@ a{
 	border:1px solid rgb(131,191,50);
 	border-radius:15px;
 }
-
 
 
 
@@ -188,13 +190,13 @@ a{
 }
 
 #accordion{
-	width=100%;
+	
 }
 
 #flexStart{
 	
 	align-self:center;	
-	margin-top:5px;	
+	margin-top:8px;	
 	padding:10px;
 	width:95%;
 
@@ -223,12 +225,13 @@ a{
 	font-style:normal;
 	font-weight:normal;
 }
+
 #back:hover{
+	
 	font-style:italic;
 	color:white;
 	background-color:rgba(128,60,51,0.6);
-	font-size:0.8em
-	
+	font-size:0.8em	
 }
 
 #trombi{
@@ -236,8 +239,8 @@ a{
 	border-radius:100px;
 	width:250px;
 	height:166px;
-
 }
+
 #etatcivil{
 	display:flex;
 	flex-direction:column;	
@@ -246,72 +249,101 @@ a{
 #blocSection{
 	display:flex;
 	justify-content:space-between;
-	padding:15px;
-		
+	padding:15px;		
 }
 
 #blocSectionContrat{
-	display:flex;
-	
+	display:flex;	
 }
 
 #detailsContrat{	
 	display:flex;
 	flex-direction:column;	
 }
+
 #finContrat{
 	display:flex;
 }
+
 #motifFinCtr{
 	margin-left:10px;
 }
+
 #zoneComment{
 	display:flex;	
 }
+
 #saveWoodien,#updateWoodien,#saveEnfant,#saveContrat,#presenceAPreciser{
 	display:none;
 }
-
 
 #dureePeriodeEssai,#calculFinPE,#calculFinCDD{
 	width:35px;
 }
 
 #vigilance{
+	
 	border:5px solid rgba(140,198,62,1);
 	border-radius:7px;
 	background-color:rgba(255,255,255,0.6);
 	padding:5px;
-	width:30%;
-	
+	width:30%;	
 }
+
 #ratiopresence{
+	
 	width:35px;
 }
 
+#accordion .ui-accordion-header{
+	   
+	margin-bottom:0px;  
+	font-family:Trebuchet MS;
+	font-size:0.9em;	
+	padding:5px;
+	padding-left:15px;
+	border-top:2px solid rgba(128,60,51,0.9);
+	
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	icon:ui-icon-triangle-1-e;
+	height:25px;
+	
+	
+}
 
-
-
-
+#accordion .ui-accordion-content{
+	margin-top:0px;
+    background-color:rgba(50, 20, 0, 0.1);	
+	border-top:none;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	
+    
+}
 .details{
 	border-top:2px solid rgba(128,60,51,0.9);
 	border-left:1px solid white;
 	border-right:1px solid white;
 	border-bottom:1px solid white;
-	border-radius:10px;
+	border-radius:10px;	
 	padding:8px;
-	margin-bottom:15px;
+	margin-top:8px;
+		
 }
-
 
 .boutons{
+	
 	display:flex;
 	justify-content:center;	
-	margin-bottom:15px;
-	
+	margin-bottom:7px;
 }
+
 .titreParag{
+	
 	font-weight:bold;
 }
+
+
 
 

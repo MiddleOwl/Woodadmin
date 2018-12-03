@@ -76,9 +76,9 @@
 		
 		<div id="listesAssociees">
 			<div id="accordion">
-				
-				<div class="details">	
 				<h2>Enfants à charge</h2>
+				<div class="details">	
+				
 					<div class="boutons"><a href="index.php?page=enfants&action=create&idWoodien=<?php echo($woodien['id']);?>"><input id="createEnfant" type="button" name="nouveau" value="Nouveau"></input></a></div>
 					<div id="bordsarrondis">
 						<?php 
@@ -112,8 +112,8 @@
 
 				</div>
 				
-				<div class="details">
 				<h2>Contrats</h2>
+				<div class="details">				
 					
 					<div class="boutons"><a href="index.php?page=contrat&action=create&idWoodien=<?php echo($woodien['id']);?>"><input id="createContrat" type="button" name="nouveau" value="Nouveau"></input></a></div>
 					<div id="bordsarrondis">
@@ -156,8 +156,8 @@
 					</div>
 				</div>
 				
-				<div class="details">
 				<h2>Qualifications</h2>
+				<div class="details">				
 					<div id="bordsarrondis">
 						<?php
 							echo(

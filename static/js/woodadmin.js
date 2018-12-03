@@ -1,5 +1,13 @@
 var url=new URL(location);
+
 $(document).ready(function(){
+	 $('#accordion').accordion({
+        animate: 300,
+		heightStyle:'content',
+		icons: {"header":"ui-icon-triangle-1-e","activeHeader":"ui-icon-triangle-1-s"}
+		
+       
+    });
 	
 	function check_contrats_emergency(){
 		

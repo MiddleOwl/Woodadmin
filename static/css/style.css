@@ -1,6 +1,6 @@
 @font-face{
 	font-family:'FFF_Tusj';
-	src:url('FFF_Tusj.ttf');
+	src:url('../FFF_Tusj.ttf');
 	
 }
 body{
@@ -79,8 +79,7 @@ tr{
 }
 
 
-td{
-	
+td{	
 	padding-left:7px;
 	height:25px;
 }
@@ -129,7 +128,6 @@ a{
 }
 
 
-
 #raisondetre{
 	
 	font-size:2em;
@@ -147,6 +145,7 @@ a{
 
 
 #bordsarrondis{
+	
 	border:1px solid gray;
 	border-radius:4px;
 	
@@ -189,9 +188,6 @@ a{
 	margin:auto;
 }
 
-#accordion{
-	
-}
 
 #flexStart{
 	
@@ -296,28 +292,28 @@ a{
 }
 
 #accordion .ui-accordion-header{
-	   
-	margin-bottom:0px;  
-	font-family:Trebuchet MS;
-	font-size:0.9em;	
+	cursor:pointer;
+	icon:ui-icon-triangle-1-e;
+	margin-bottom:0px;	
+	font-size:0.9em;
+	font-weight:bold;	
 	padding:5px;
 	padding-left:15px;
 	border-top:2px solid rgba(128,60,51,0.9);
-	
+	background-color:rgba(50, 20, 0, 0.2);
 	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	icon:ui-icon-triangle-1-e;
-	height:25px;
-	
+	border-top-right-radius:10px;	
+	height:25px;	
 	
 }
 
 #accordion .ui-accordion-content{
-	margin-top:0px;
+	margin-top:0px;		
     background-color:rgba(50, 20, 0, 0.1);	
 	border-top:none;
 	border-top-left-radius:0px;
 	border-top-right-radius:0px;
+	padding:10px;
 	
     
 }

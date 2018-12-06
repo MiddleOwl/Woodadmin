@@ -126,21 +126,60 @@ a{
 	color:black;
 	text-decoration:none;
 }
-
-
+@keyframes animraisonetre{
+	
+	0% {
+        transform: translateY(0px);
+    }    
+    50% {
+        transform: translateY(150px);
+    }
+	100%{
+		transform: translateY(0px);
+	}
+	
+}
 #raisondetre{
 	
 	font-size:2em;
 	font-family:FFF_Tusj;
 	color:brown;
-	transition-property:transform;
-	transition-duration:3s;
-	transition-delay:0.4s;
+	animation:animraisonetre 5s;
 }
 
-#raisondetre:hover{
+@keyframes animactionrequise {
+    0% {
+        transform: translateX(0px);
+    }
+    
+    50% {
+		background-color:red;
+		transform: scale(1.1);
+		
+	}
+	100%{
+		transform: scale(1);
+		
+	}
+}
+
+#actionrequise{
+	width:25%;	
+	border-radius:10px;
+	padding:8px;
+	animation:animactionrequise 2.5s;
+	animation-iteration-count:2;
+}
+
+#welcome{
+	background-image:linear-gradient(to top right,rgba(195,181,155) 35%,rgba(140,198,62) 65%);
+	height:30px;
+	border:2px solid white;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:10px;
+	padding-bottom:10px;
 	
-	transform:translateY(150px);
 }
 
 

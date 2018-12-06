@@ -6,11 +6,11 @@
 
 <?php ob_start(); ?>
     <?php 
-        echo("<div id='welcome'>Bienvenue sur le portail admin !</div>");
+        echo("<div id='welcome'>Bienvenue sur le portail admin ".$_SESSION['prenom']." !</div>");
 	?>
 	<div id="flexStart">	
 		
-		<p id="actionRequise"> Vous avez une action requise pour les contrats suivants: </p>
+		<p id="actionRequise"> Tu as une action requise pour les contrats suivants: </p>
 		<div id="bordsarrondis">
 			<div id="contratsATraiter"></div>
 		</div>

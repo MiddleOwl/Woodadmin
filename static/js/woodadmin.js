@@ -3,10 +3,9 @@ var url=new URL(location);
 $(document).ready(function(){
 	 $('#accordion').accordion({
         animate: 300,
+		collapsible:true,
 		heightStyle:'content',
-		icons: {"header":"ui-icon-triangle-1-e","activeHeader":"ui-icon-triangle-1-s"}
-		
-       
+		      
     });
 	
 	function check_contrats_emergency(){
@@ -39,14 +38,18 @@ $(document).ready(function(){
             {
 				login: $("#login").val(),
 				password: $("#password").val()
+				
 			},
             function(data){
+				
                 if(data['backup'] == 'ok'){
-                    location = 'index.php?page=portail_admin';
+					var prenomUser=data['prenom'];
+                    location = 'index.php?page=portail_admin&user='+prenomUser;
+					
                 }
                 else{
                     alert('Tu n\'es pas admin ou les infos saisies sont incorrectes. Clique sur OK pour te connecter!');
-                }
+                }	
 			},
 			"json"
         );

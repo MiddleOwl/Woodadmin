@@ -6768,7 +6768,7 @@ var widgetsAccordion = $.widget( "ui.accordion", {
 			"ui-accordion-header-collapsed": "ui-corner-all",
 			"ui-accordion-content": "ui-corner-bottom"
 		},
-		collapsible: true,
+		collapsible:false,
 		event: "click",
 		header: "> li > :first-child, > :not(li):even",
 		heightStyle: "auto",

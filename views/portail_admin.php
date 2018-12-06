@@ -10,10 +10,21 @@
 	?>
 	<div id="flexStart">	
 		
-		<p id="actionrequise"> Tu as une action requise pour les contrats suivants: </p>
-		<div id="bordsarrondis">
-			<div id="contratsATraiter"></div>
-		</div>
+		<?php 
+		
+		if (!empty($contratsEmergency))
+		{
+			echo("
+			
+			<p id='actionrequise'> Tu as une action requise pour les contrats suivants: </p>		
+		
+			<div id='bordsarrondis'>
+				<div id='contratsATraiter'></div>
+			</div>
+			
+			");
+		}
+		?>
 		
 	</div>
 	

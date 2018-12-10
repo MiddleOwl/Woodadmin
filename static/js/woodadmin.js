@@ -44,7 +44,7 @@ $(document).ready(function(){
 				
                 if(data['backup'] == 'ok'){
 					var prenomUser=data['prenom'];
-                    location = 'index.php?page=portail_admin&user='+prenomUser;
+                    location = 'index.php?page=portail_admin';
 					
                 }
                 else{

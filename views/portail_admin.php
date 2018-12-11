@@ -1,5 +1,6 @@
 <?php $title = "Portail administrateur"; ?>
 
+
 <?php ob_start(); ?>
     <?php include(dirname(__FILE__)."/../includes/nav.php"); ?>
 <?php $nav = ob_get_clean(); ?>
@@ -29,5 +30,5 @@
 	</div>
 	
 <?php $content = ob_get_clean(); ?>
-
 <?php include(dirname(__FILE__)."/../templates/template.php"); ?>
+

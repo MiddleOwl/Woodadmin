@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include(dirname(__FILE__)."/../models/contrats.php");
 $contrats=recup_contrats();
 

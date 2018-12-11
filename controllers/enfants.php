@@ -1,5 +1,5 @@
 <?php 
-
+	session_start();
 	include(dirname(__FILE__).'/../models/enfants.php');
 	$enfant=isset($_GET['id'])?recup_enfant($_GET['id']):NULL;
 	

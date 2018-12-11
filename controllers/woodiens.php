@@ -1,5 +1,5 @@
 <?php
-
+	session_start();
     include(dirname(__FILE__)."/../models/woodiens.php");
     $woodiens = recup_woodiens();
 	function conversionDate($dateAConvertir){

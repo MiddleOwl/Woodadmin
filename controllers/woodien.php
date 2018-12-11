@@ -1,5 +1,5 @@
 <?php
-
+	session_start();
 	include(dirname(__FILE__)."/../models/woodiens.php");
 	$situationMatri = get_situation_matri();
 	$action=$_GET['action'];	

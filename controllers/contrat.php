@@ -1,5 +1,5 @@
 <?php 
-	
+	session_start();
 	include(dirname(__FILE__)."/../models/contrats.php");
 	
 	$contrat=(isset($_GET['id']))?recup_contrat($_GET['id']):NULL;

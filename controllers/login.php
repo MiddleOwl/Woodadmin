@@ -1,7 +1,5 @@
 <?php 
-
 	session_start();
-	
     include(dirname(__FILE__)."/../models/login.php");
     $success = check_admin($_POST);	
 	

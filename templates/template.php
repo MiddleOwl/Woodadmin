@@ -11,8 +11,9 @@
 	<body>
 		<header>
 		
-			<div id="img">	
-				<a href="index.php"><img id="logo" src="static/logo_MW.png" alt="MobilWood"/></a>
+			<div id="img">
+				<?php $redirection_image = empty($_SESSION)?"index.php":"index.php?page=portail_admin";?>
+				<a href=<?php echo($redirection_image)?>><img id="logo" src="static/logo_MW.png" alt="MobilWood"/></a>
 			</div>
 
         

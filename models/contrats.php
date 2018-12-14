@@ -5,7 +5,7 @@
 	function recup_contrats(){
 		include(dirname(__FILE__)."/../hidden/connexion.php");
 		$contrats=array();
-		$query=$bdd->query('SELECT*FROM contrats ORDER BY typeContrat');
+		$query=$bdd->query('SELECT*FROM contrats ORDER BY idWoodien');
 		while($data=$query->fetch()){
 			$contrats[]=$data;
 		};

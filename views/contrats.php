@@ -26,11 +26,12 @@
 							$nomTitulaire = get_woodien_from_contrat($idW)[1];
 							$idType=$c[1];
 							$nomType = get_nom_type_from_id($idType)[0];
-							echo('<tr><td>'.$c['numContrat'].'</td>					
-							<td>'.$nomType.'</td>
-							<td>'.$nomTitulaire.'</td>
-							</tr>'
-						);}?>				
+							echo("<tr style=cursor:pointer onclick=\"window.location='index.php?page=contrat&action=read&id=".$c['id']."&idWoodien=".$idW."'\">");
+							echo("<td>".$c['numContrat']."</td>					
+								<td>".$nomType."</td>
+								<td>".$nomTitulaire."</td>
+							</tr>");
+						}?>				
 				</tbody>
 			</table>
 		</div>		

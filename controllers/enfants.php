@@ -1,8 +1,9 @@
 <?php 
 	session_start();
-	include(dirname(__FILE__).'/../models/enfants.php');
-	$enfant=isset($_GET['id'])?recup_enfant($_GET['id']):NULL;
-	
+	if(isset($_SESSION['prenom'])){
+		include(dirname(__FILE__).'/../models/enfants.php');
+		$enfant=isset($_GET['id'])?recup_enfant($_GET['id']):NULL;
+		
 		switch($_GET['action']){
 			case 'read':				
 				include(dirname(__FILE__).'/../views/enfant.php');
@@ -35,6 +36,10 @@
 			break;
 				
 		}
+	}
+	else{
+		header('Location:index.php');
+	}
 		
 	
 

@@ -7,7 +7,8 @@
 
 <?php ob_start(); ?>
     <?php 
-        echo("<div id='welcome'>Bienvenue sur le portail admin ".$_SESSION['prenom']." !</div>");
+		$prenomUser=isset($_SESSION['prenom']) ? $_SESSION['prenom'] : "";
+        echo("<div id='welcome'>Bienvenue sur le portail admin ".$prenomUser." !</div>");
 	?>
 	<div id="flexStart">	
 		

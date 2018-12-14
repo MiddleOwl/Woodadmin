@@ -20,8 +20,8 @@
 
 	foreach ($contratsEmergency as $cE){
 		$idW=$cE[2];
-		$back.="<tr><td>";
-		$back.="<a href='index.php?page=contrat&action=read&id=".$cE['id']."&idWoodien=".$cE['idWoodien']."'>".$cE['numContrat']."</a>";
+		$back.="<tr style=cursor:pointer onclick=\"window.location='index.php?page=contrat&action=read&id=".$cE['id']."&idWoodien=".$cE['idWoodien']."'\"><td>";
+		$back.=$cE['numContrat'];
 		$back.="</td><td>";
 		$back.=get_woodien_from_contrat($idW)[1];
 		$back.="</td><td>";

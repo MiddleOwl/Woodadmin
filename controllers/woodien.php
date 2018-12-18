@@ -7,7 +7,7 @@
 		switch($action){
 			
 			case 'read':
-				$woodien = recup_woodien($_GET["id"]);
+				$woodien = recup_woodien($_GET["id"]);				
 				$enfants = enfants_from_woodien($_GET["id"]);
 				$contrats = contrats_from_woodien($_GET["id"]);
 				function conversionDate($dateAConvertir){
@@ -84,14 +84,18 @@
 			break;
 			
 			case 'editPDF':
+				global $prenom;
 				
 				require('/../fpdf/fpdf.php');
 				class PDF extends FPDF{
 					function Header(){
+						
+						$prenom=$woodien['prenom'];
 						$this->Image('C:\wamp64\www\woodadmin\static\logo_MW.png',10,6,30);
 						$this->SetFont('Arial','B',15);
 						$this->Cell(80);
 						$this->Cell(40,10,'Fiche Woodien',1,0,'C');
+						$this->Cell(30,5,$prenom,1,0,'C');
 						$this->Ln(20);
 					}
 					function Footer(){
